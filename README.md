@@ -1,4 +1,6 @@
 # e-commerce
 Projet e-commerce
 
-Mise en place du dépôt Git pour le projet e-commerce 
+Le 22/05/2015
+
+Création du dépôt Git pour le projet e-commerce 
