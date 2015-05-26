@@ -23,8 +23,3 @@ Dossiers :
          -> stylesheets
 
 Mise en place des fichiers de bootstrap 
-
-
-
-
-
