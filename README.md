@@ -11,10 +11,20 @@ Création arborescence du projet
 
 Dossiers :
 
-- app    -> views
+- app    
+         -> views
 
-- public -> images
+- db
 
+- public 
+         -> fonts
+         -> images
+         -> js
          -> stylesheets
+
+Mise en place des fichiers de bootstrap 
+
+
+
 
 
