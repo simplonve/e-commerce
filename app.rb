@@ -10,3 +10,7 @@ ActiveRecord::Base.default_timezone=:local
 
 class Produit < ActiveRecord::Base
 end
+
+
+class Commande < ActiveRecord::Base
+end

@@ -11,14 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150527074913) do
+ActiveRecord::Schema.define(version: 20150527090853) do
+
+  create_table "clients", force: :cascade do |t|
+    t.integer "numclient"
+    t.string  "nom"
+    t.string  "prenom"
+    t.string  "adresse"
+    t.integer "codepostal"
+    t.string  "ville"
+    t.string  "pays"
+    t.string  "telephone"
+    t.string  "mail"
+  end
+
+  create_table "commandes", force: :cascade do |t|
+    t.integer  "numclient"
+    t.string   "refproduit"
+    t.string   "article"
+    t.string   "descriptif"
+    t.integer  "numcommande"
+    t.integer  "quantitearticle"
+    t.float    "totalprixarticle"
+    t.float    "totalprixcommande"
+    t.datetime "date"
+  end
 
   create_table "produits", force: :cascade do |t|
     t.string  "refproduit"
     t.string  "article"
     t.string  "descriptif"
     t.integer "stock"
-    t.integer "prixproduit"
+    t.float   "prixproduit"
   end
 
 end
