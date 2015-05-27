@@ -1,0 +1,59 @@
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Notre site de ecommerce</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="../public/images/favicon.ico" />
+  <link rel="stylesheet" href="../public/stylesheets/bootstrap.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="../public/stylesheets/bootstrap.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="../public/stylesheets/style.css" type="text/css" media="all" />
+   
+    <style>
+      body {
+        padding-top: 75px;
+      }
+      .starter-template {
+        padding: 40px 15px;
+        text-align: center;
+      }
+      .container {
+        max-width:1000px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+    <div class="logo">
+      <h1>SimplonVE - Notre site €commerce</h1>
+      <img class="img-responsive" src="../public/images/simplonve.png" alt="simplonve" >
+    </div>
+      <nav class="navbar navbar-default navbar-sm">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Recherche">
+          </div>
+          <button type="submit" class="btn btn-default">Rechercher</button>
+        </form>
+  		      	<ul class="nav navbar-nav navbar-right">
+  		        	<li><a href="panier.erb" class="btn" ><img src="../public/images/caddie.png" class="pull-center"/> Panier </a></li>
+  		      	</ul>
+  	 </nav>
+
+        <%= yield %>
+    </header>
+
+    
+
+
+   
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+      <div class="reseau-sociaux">
+        <a href="https://twitter.com/simplonve" class="twitter-follow-button" data-show-count="false">Follow @simplonve</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+      </div>
+  </body>
+</html>
