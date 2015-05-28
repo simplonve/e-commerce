@@ -1,0 +1,20 @@
+.navbar-form {
+	margin-top: 25px;
+}
+.logo, .reseau-sociaux {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.logo img {
+	display: inline;
+}
+
+.navbar-right {
+	margin-right: 2%;
+}
+
+.promo {
+	text-align: center;
+}
