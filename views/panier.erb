@@ -1,26 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
-<head>
-	<title>Notre site de ecommerce</title>
+
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="../../public/stylesheets/bootstrap.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="../../public/stylesheets/style.css" type="text/css" media="all" />
 </head>
-<img class="img-responsive">
 <body>
-	<div class="navbar-form">
+	<div class="navbar navbar-form">
 		<form class="form-horizontal">
-			<label class="col-sm-2 control-label"><b>Numéro Client :</b>007</label><br>
-			<label class="col-sm-2 control-label"><b>Nom :</b> M. Bernard Dupont</label><br>
-			<label class="col-sm-2 control-label"><b>Adresse :</b> 55 Rue du Faubourg Saint-Honoré, 75008 Paris</label><br>
-			<label class="col-sm-2 control-label"><b>Pays :</b> FRANCE </label><br>
-			<label class="col-sm-2 control-label"><b>Téléphone :</b> 00 00 00 00 00 </label><br>
-			<label class="col-sm-2 control-label"><b>Mail :</b> b.dupont@simplonve.co </label>
+			<label><b>Numéro Client :</b>007</label><br>
+			<label><b>Nom :</b> M. Bernard Dupont</label><br>
+			<label><b>Adresse :</b> 55 Rue du Faubourg Saint-Honoré, 75008 Paris</label><br>
+			<label><b>Pays :</b> FRANCE </label><br>
+			<label><b>Téléphone :</b> 00 00 00 00 00 </label><br>
+			<label><b>Mail :</b> b.dupont@simplonve.co </label>
 		</form>
 	</div>
 
 
-	<div class="navbar">
+	<div class="navbar navbar-collapse">
 		<div class="table-responsive">
 			<table id="example" class="table table-bordered" width="100%" cellspacing="0">
 			        <thead>
@@ -31,6 +27,9 @@
 			                <th>Quantité</th>
 			                <th>Prix unitaire HT</th>
 			                <th>Prix</th>
+			                <th><div class="btn-group" role="group" aria-label="...">
+							  <button type="button" class="btn btn-default">Ajouter</button>
+							</div></th>
 			                
 			            </tr>
 			        </thead>
@@ -42,6 +41,10 @@
 			                <td>1</td>
 			                <td>5,00</td>
 			                <td>5,00</td>
+			                <td><div class="btn-group" role="group" aria-label="...">
+							  <button type="button" class="btn btn-default">Supprimer</button>
+							</div>
+							</td>
 			            </tr>
 			            <tr>
 			                <td>5678</td>
@@ -50,6 +53,10 @@
 			                <td>2</td>
 			                <td>10,00</td>
 			                <td>20,00</td>
+			                <td><div class="btn-group" role="group" aria-label="...">
+							  <button type="button" class="btn btn-default">Supprimer</button>
+							</div>
+							</td>
 			            </tr>
 			        </tbody>
 			</table>
