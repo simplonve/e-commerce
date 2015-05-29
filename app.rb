@@ -16,6 +16,10 @@ get '/' do
 	erb :accueil
 end
 
-get "/panier" do
+get '/panier' do
 	erb :panier
+end
+
+get '/:id' do
+	erb :fiche_produit
 end
