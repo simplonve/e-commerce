@@ -19,6 +19,15 @@
 	text-align: center;
 }
 
-.logo_panier {
-	margin-right: 2%;
+
+.fiche-client {
+	display: inline-block;
+    width: 150px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+.logo-panier {
+	margin-left: 170px;
+    border: 1px solid blue;
 }
