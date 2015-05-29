@@ -1,35 +1,23 @@
-<!DOCTYPE html PUBLIC>
-<html lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
-	<head>
-		<title>Notre site de ecommerce</title>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all" />
-	</head>
-	<body>
-		<div class="col-xs-4">
-			<input type="image" src="images/pens.jpg" style="margin:25px; height:280px; border-radius:10px; box-shadow:0 0 15px 2px;"/> 
+<body>
+	<div class="col-xs-4">
+		<input type="image" src="images/<%= produit_select.refproduit%>.jpg" style="margin:25px; height:280px;"/> 
+	</div>
+	<div class="col-xs-8">
+		<h2><%= produit_select.article%></h2>
+		<div class="col-md-6">
+			<p><%= produit_select.descriptif%></p>
 		</div>
-		<div class="col-xs-8">
-			<h2>Lot de 2 Stylos</h2>
-			<div class="col-md-6">
-				<p>Lot de 2 stylos 
-				un bleu et un noir
-				avec pointe fine</p>
-			</div>
+	</div>
+	<th>
+		<div class="btn-group">
+			<input type="button" value="Ajouter au panier" style="color:green; font-weight:bold; padding:10px 10px;" />
 		</div>
-		<th>
-			<div class="btn-group">
-				<input type="button" value="Ajouter au panier" style="color:green; font-weight:bold; padding:10px 10px;" />
-			</div>
-		</th>
+	</th>
 
-		<div class="col-md-4">
-			<div temprop="price" style="color:red; font-weight:bold; font-size:45px ;"content="2,99">2,99<sup>€ ht</sup> </div>
-			<div style="color:black; font-weight:bold; font-size:20px;">Piéce</div>
-			<div temprop="price" style="color:black; font-weight:bold; font-size:25px ;"content="3,15">(3,15<sup>€ ttc</sup>)
-			</div>
+	<div class="col-md-4">
+		<div temprop="price" style="color:red; font-weight:bold; font-size:45px ;"content="2,99">2,99<sup>€ ht</sup> </div>
+		<div style="color:black; font-weight:bold; font-size:20px;">Piéce</div>
+		<div temprop="price" style="color:black; font-weight:bold; font-size:25px ;"content="3,15">(3,15<sup>€ ttc</sup>)
 		</div>
-
-	</body>
-</html>
+	</div>
+</body>

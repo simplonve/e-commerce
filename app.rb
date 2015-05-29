@@ -21,5 +21,6 @@ get '/panier' do
 end
 
 get '/:id' do
+	@produit_select = Produit.find(params[:id])
 	erb :fiche_produit
 end

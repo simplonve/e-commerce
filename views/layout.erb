@@ -1,53 +1,50 @@
 <html lang="fr">
-  <head>
-      <meta charset="utf-8">
-      <title>Notre site de ecommerce</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Notre site de ecommerce</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all" />
+</head>
 
-  <body>
-    <header>
+<body>
+  <header>
     <div class="col-md-12">
       <div class="col-md-2">
-            <img class="img-responsive" src="images/simplonve.png" alt="simplonve" >
+        <img class="img-responsive" src="images/simplonve.png" alt="simplonve" >
       </div>
       <div class="col-md-9">
-            <h1>SimplonV€commerce</h1>
+        <h1>SimplonV€commerce</h1>
       </div>
     </div>
     <div class="col-md-12">
-          <nav class="navbar navbar-default navbar-sm">
-            <ul class="nav navbar-nav">
-              <li class="navbar-left">
-                  <a href="/" class="btn" ><img src="images/accueil.png" class="pull-center"/></a>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Recherche">
-              </div>
-              <button type="submit" class="btn btn-default">Rechercher</button>
-            </form>
-      		      	<ul class="nav navbar-nav navbar-right">
-      		        	<li><a href="panier" class="btn" ><img src="images/caddie.png" class="pull-center"/> Panier </a></li>
-      		      	</ul>
-    	   </nav>
-    </div>
-
-    	   <%= yield %>
-
-    </header>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-      </div>
-  </body>
-  <footer>
-    <div class="clo-md-12 reseau-sociaux">
-      <a href="https://twitter.com/simplonve" class="twitter-follow-button" data-show-count="false">Follow @simplonve</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-      </script>
-    </div>
-  </footer>
+      <nav class="navbar navbar-default navbar-sm">
+        <ul class="nav navbar-nav">
+          <li class="navbar-left">
+            <a href="/" class="btn" ><img src="images/accueil.png" class="pull-center"/></a>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Recherche">
+          </div>
+          <button type="submit" class="btn btn-default">Rechercher</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+         <li><a href="panier" class="btn" ><img src="images/caddie.png" class="pull-center"/> Panier </a></li>
+       </ul>
+     </nav>
+   </div>
+   <%= yield %>
+ </header>
+ <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+</body>
+<footer>
+  <div class="clo-md-12 reseau-sociaux">
+    <a href="https://twitter.com/simplonve" class="twitter-follow-button" data-show-count="false">Follow @simplonve</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+  </div>
+</footer>
 </html>
