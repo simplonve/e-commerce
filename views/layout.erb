@@ -9,11 +9,21 @@
 
   <body>
     <header>
-      <div class="logo">
-        <h1 text-color="blue">SimplonV€commerce</h1>
-        <img class="img-responsive" src="images/simplonve.png" alt="simplonve" >
+    <div class="col-md-12">
+      <div class="col-md-2">
+            <img class="img-responsive" src="images/simplonve.png" alt="simplonve" >
       </div>
+      <div class="col-md-9">
+            <h1>SimplonV€commerce</h1>
+      </div>
+    </div>
+    <div class="col-md-12">
           <nav class="navbar navbar-default navbar-sm">
+            <ul class="nav navbar-nav">
+              <li class="navbar-left">
+                  <a href="/" class="btn" ><img src="images/accueil.png" class="pull-center"/></a>
+              </li>
+            </ul>
             <form class="navbar-form navbar-left" role="search">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Recherche">
@@ -24,6 +34,7 @@
       		        	<li><a href="panier" class="btn" ><img src="images/caddie.png" class="pull-center"/> Panier </a></li>
       		      	</ul>
     	   </nav>
+    </div>
 
     	   <%= yield %>
 

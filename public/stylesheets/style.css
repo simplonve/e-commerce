@@ -18,3 +18,16 @@
 .promo {
 	text-align: center;
 }
+
+h1 {
+	font-size: 6em;
+	color:rgb(18,89,144);
+	text-align: center;
+	border:solid;
+	border-color: rgb(18,89,144);
+	background-color: rgba(115,146,58,0.7);
+}
+
+h2{
+	font-size: 3em;
+}
