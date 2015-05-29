@@ -15,3 +15,7 @@ get '/' do
 	@tableproduit = Produit.all
 	erb :accueil
 end
+
+get "/panier" do
+	erb :panier
+end
