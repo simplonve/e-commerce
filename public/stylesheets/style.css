@@ -26,6 +26,8 @@ h1 {
 	border:solid;
 	border-color: rgb(115,146,58);
 	background-color: rgba(243,188,1,0.5);
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 
 h2{
