@@ -18,16 +18,3 @@
 .promo {
 	text-align: center;
 }
-
-
-.fiche-client {
-	display: inline-block;
-    width: 150px;
-    border: 1px solid black;
-    vertical-align: top;
-}
-
-.logo-panier {
-	margin-left: 170px;
-    border: 1px solid blue;
-}

@@ -4,22 +4,40 @@
 	<link rel="stylesheet" href="../../public/stylesheets/style.css"/>
 	</head>
 	<body>
-		<div class="fiche-client">
-			<form class="form-horizontal">
-				<label><b>Numéro Client :</b>007</label><br>
-				<label><b>Nom :</b> M. Bernard Dupont</label><br>
-				<label><b>Adresse :</b> 55 Rue du Faubourg Saint-Honoré, 75008 Paris</label><br>
-				<label><b>Pays :</b> FRANCE </label><br>
-				<label><b>Téléphone :</b> 00 00 00 00 00 </label><br>
-				<label><b>Mail :</b> b.dupont@simplonve.co </label>
+		<div class="col-md-10">
+			<!-- <form class="form-horizontal"> -->
+				<div class="form-inline form-group form-sm">
+					<label for="numero-client">Numéro Client :</label>
+					<intput type="text" class="form-control" id="exampleInputName2">007</intput>
+				</div>
+				<div class="form-inline form-group">
+					<label for="nom">Nom du client :</label>
+					<intput type="text" class="form-control" id="exampleInputName2">M. Bernard Dupont</intput>
+				</div>				
+				<div class="form-inline form-group">
+					<label for="numero-client">Adresse :</label>
+					<intput type="text" class="form-control" id="exampleInputName2">55 Rue du Faubourg Saint-Honoré, 75008 Paris</intput>
+				</div>
+				<div class="form-inline form-group">
+					<label for="numero-client">Pays :</label>
+					<intput type="text" class="form-control" id="exampleInputName2">FRANCE</intput>
+				</div>
+				<div class="form-inline form-group">
+					<label for="numero-client">Téléphone :</label>
+					<intput type="text" class="form-control" id="exampleInputName2">00 00 00 00 00</intput>
+				</div>
+				<div class="form-inline form-group">
+					<label for="numero-client">Mail :</label>
+					<intput type="text" class="form-control" id="exampleInputName2">b.dupont@simplonve.co</intput>
+				</div>
 			</form>
 		</div>
-		<div class="logo-panier">
+		<div class="col-md-2">
 			<img src="../public/images/caddie-orange.png">
 		</div>
 
 
-		<div class="navbar navbar-collapse">
+		<div class="col-md-12">
 			<div class="table-responsive">
 				<table id="example" class="table table-bordered" width="100%" cellspacing="0">
 				        <thead>
@@ -57,7 +75,7 @@
 				                <td>10,00</td>
 				                <td>20,00</td>
 				                <td><div class="btn-group" role="group" aria-label="...">
-								  <button type="button" class="btn btn-default"><img src="../public/images/poubelle.png" alt="poubelle"></button>
+								  <button type="button" class="btn btn-default"><img src="../public/images/poubelle.png" data-toggle="tooltip"  alt="poubelle"></button>
 								</div>
 								</td>
 				            </tr>
