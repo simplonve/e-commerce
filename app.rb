@@ -12,10 +12,6 @@ class Produit < ActiveRecord::Base
 end
 
 get '/' do 
-	@tableproduit = Produit.all
+	@produits = Produit.all
 	erb :accueil
-end
-
-get "/panier" do
-	erb :panier
 end
