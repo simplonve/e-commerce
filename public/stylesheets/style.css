@@ -35,9 +35,17 @@
 }
 
 .prix_total {
+	margin-left: 2%;
 	color:black;
 	font-weight:bold; 
 	font-size:20px ;
+}
+
+.prix_tva {
+	margin-left: 2%;
+	color:black;
+	font-style: italic; 
+	font-size:15px ;
 }
 
 h1 {

@@ -32,7 +32,7 @@
 				            <tr>
 				                <th>Référence produit</th>
 				                <th>Nom de l'article</th>
-				                <th>Déscription</th>
+				                <th>Description</th>
 				                <th>Quantité</th>
 				                <th>Prix unitaire HT</th>
 				                <th>Prix</th>
@@ -73,14 +73,20 @@
 				<div class="col-md-9">
 				</div>
 				<div class="col-md-3">
-					<div class="form-inline form-group form-sm">
-						<label class="prix_total" for="Total_HT">Total (ht) :</label>
-						<intput type="text" class="prix_total" id="exampleInputName2">25,00 €</intput>
+					<div class="form-inline form-group form-sm prix_total">
+						<label for="Total_HT">Total (ht) :</label>
+						<intput class="form-control" type="text" id="exampleInputName2">25,00 €</intput>
 					</div>
-					<div class="form form-inline form-group form-sm">
-						<label class="prix_total" for="Total_TTC">Total (ttc) :</label>
-						<intput type="text" class="prix_total" id="exampleInputName2">29,90 €</intput>
-					</div>	
+					<div class="form-inline form-group form-sm">
+					</div>
+					<div class="form form-inline form-group form-sm prix_tva">
+						<label for="TVA">TVA 20 % :</label>
+						<intput class="form-control" type="text" id="exampleInputName2">5,00 €</intput>
+					</div>
+					<div class="form form-inline form-group form-sm prix_total">
+						<label for="Total_TTC">Total (ttc) :</label>
+						<intput type="text" class="form-control prix_total" id="exampleInputName2">30,00 €</intput>
+					</div>
 				</div>
 			</div>	
 		</div>
