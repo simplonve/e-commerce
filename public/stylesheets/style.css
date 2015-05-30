@@ -23,13 +23,30 @@
 	margin-left: 2%;
 }
 
+.produit {
+	color:rgb(18,89,144);
+	font-size:22px; 
+}
+
+.prix {
+	color:red;
+	font-weight:bold; 
+	font-size:30px ;
+}
+
+.prix_total {
+	color:black;
+	font-weight:bold; 
+	font-size:20px ;
+}
+
 h1 {
-	font-size: 6em;
+	font-size: 3.8em;
 	color:rgb(18,89,144);
 	text-align: center;
 	border:solid;
 	border-color: rgb(115,146,58);
-	background-color: rgba(243,188,1,0.5);
+	/*background-color: rgba(243,188,1,0.5);*/
 	padding-top: 3%;
 	padding-bottom: 3%;
 }

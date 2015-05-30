@@ -1,6 +1,6 @@
 <body>
 	<div class="col-xs-4">
-		<input type="image" src="images/<%= produit_select.refproduit%>.jpg" style="margin:25px; height:280px;"/> 
+		<input type="image" href="<%= produit.id %>" src="images/<%= produit_select.refproduit%>.jpg" style="margin:25px; height:280px;"/> 
 	</div>
 	<div class="col-xs-8">
 		<h2><%= produit_select.article%></h2>
@@ -15,9 +15,9 @@
 	</th>
 
 	<div class="col-md-4">
-		<div temprop="price" style="color:red; font-weight:bold; font-size:45px ;"content="2,99">2,99<sup>€ ht</sup> </div>
+		<div temprop="price" style="color:red; font-weight:bold; font-size:45px ;"content="2,99"><%= produit_select.prixproduit%><sup>€ ht</sup> </div>
 		<div style="color:black; font-weight:bold; font-size:20px;">Piéce</div>
-		<div temprop="price" style="color:black; font-weight:bold; font-size:25px ;"content="3,15">(3,15<sup>€ ttc</sup>)
+		<div temprop="price" style="color:black; font-weight:bold; font-size:25px ;"content="3,15"><%= produit_select.prixproduit%><sup>€ ttc</sup>)
 		</div>
 	</div>
 </body>
