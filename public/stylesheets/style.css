@@ -19,6 +19,10 @@
 	text-align: center;
 }
 
+.client {
+	margin-left: 2%;
+}
+
 h1 {
 	font-size: 6em;
 	color:rgb(18,89,144);
