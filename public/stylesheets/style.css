@@ -35,6 +35,7 @@
 }
 
 .prix_total {
+	display : block;
 	margin-left: 2%;
 	color:black;
 	font-weight:bold; 
@@ -59,6 +60,14 @@ h1 {
 	padding-bottom: 3%;
 }
 
-h2{
+h2 {
 	font-size: 3em;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	text-align: center;
 }
