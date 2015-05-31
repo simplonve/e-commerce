@@ -1,12 +1,14 @@
 <div class="row">
-  <div class="col-md-12">
-    <h2 class="promo"><b>PROMOTION</b> sur tous ces articles</h2>
-  </div>
-  		<% @produits.each do |produit| %>
-  		<div class="btn promo col-md-3" href="<%= produit.id %>">
-	   		<div class="produit"><%= produit.article %></div>
-	   		<img src="images/<%= produit.refproduit %>.jpg" class="img-thumbnail" alt="promotion" width="60%" height="60%">
-	   		<div class="prix"><%= produit.prixproduit.to_s.tr(".",",")%> € <sup>ht</sup></div>
+	<div class="col-md-12">
+		<h2 class="promo"><b>PROMOTION</b> sur tous ces articles</h2>
+	</div>
+	<div class="col-md-12">
+		<% @produits.each do |produit| %>
+		<div class="btn promo col-md-3" href="<%= produit.id %>">
+			<div class="produit"><%= produit.article %></div>
+			<img src="images/<%= produit.refproduit %>.jpg" class="img-thumbnail" alt="promotion" width="60%" height="60%">
+			<div class="prix"><%= produit.prixproduit.to_s.tr(".",",")%> € <sup>ht</sup></div>
 		</div>
 		<% end %>
+	</div>
 </div>	
