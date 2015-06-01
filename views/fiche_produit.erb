@@ -1,20 +1,33 @@
-<div class="col-md-12">
-	<div class="col-md-4">
-		<input class="imgproduit-fiche-produit" type="image" src="images/<%= @produit_select.refproduit %>.jpg"/> 
-	</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="col-md-4">
+			<input class="imgproduit-fiche-produit" type="image" src="images/<%= @produit_select.refproduit %>.jpg"/> 
+		</div>
 
-	<div class="col-md-8">
-		<h2><%= @produit_select.article %></h2>
-		<hr>
-		<p><b>Description du produit:</b><p>
-		<p><%= @produit_select.descriptif %></p>
-		<hr>
-		<div class="prix" content="2,99"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
-		<div class="piece">Piéce</div>
-		<th>
-			<div class="btn-group">
-				<input class="bouton" type="button" value="Ajouter au panier"/>
+		<div class="col-md-8">
+			<h2><%= @produit_select.article %></h2>
+			<hr>
+			<p><b>Description du produit:</b></p>
+			<p><%= @produit_select.descriptif %></p>
+			<hr>
+		</div>
+		<div class="centrage col-md-2">
+			<div>Réf. : <%= @produit_select.refproduit %></div>
+			<div class="prix" content="2,99"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
+			<div class="piece">Piéce</div>
+		</div>
+		<div class="centrage-quantite col-md-3">
+			<th>
+				<label for="quantite">
+					Quantité :
+				</label>
+				<input class="quantite" id="quantite" type="number" name="nombre"></input>
 			</div>
-		</th>
+			<div class="centrage-btn col-md-3">
+				<div class="btn">
+					<input class="bouton" type="button" value="Ajouter au panier"/>
+				</div>
+			</th>
+		</div>
 	</div>
 </div>
