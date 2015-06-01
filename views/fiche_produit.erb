@@ -1,20 +1,18 @@
-<%= @produit_select.article %>
 <div class="col-md-4">
 	<input class="imgproduit" type="image" src="images/<%= @produit_select.refproduit %>.jpg"/> 
 </div>
+
 <div class="col-md-8">
 	<h2><%= @produit_select.article %></h2>
-	<div class="col-md-6">
-		<p><%= @produit_select.descriptif %></p>
-	</div>
+	<hr>
+	<p>Description du produit:<p>
+	<p><%= @produit_select.descriptif %></p>
+	<div class="prix" content="2,99"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
+	<div class="piece">Piéce</div>
 </div>
+
 <th>
 	<div class="btn-group">
 		<input class="bouton" type="button" value="Ajouter au panier"/>
 	</div>
 </th>
-
-<div class="col-md-6"></div>
-	<div class="prix" style="color:red; font-weight:bold; font-size:45px ;"content="2,99"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
-	<div style="color:black; font-weight:bold; font-size:20px;">Piéce</div>
-</div>
