@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 20150527090853) do
     t.float    "totalprixarticle"
     t.float    "totalprixcommande"
     t.datetime "date"
+    t.integer  "produit_id"
+    t.text     "validation"
   end
 
   create_table "produits", force: :cascade do |t|

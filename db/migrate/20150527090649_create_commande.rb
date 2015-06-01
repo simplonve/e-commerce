@@ -10,6 +10,8 @@ class CreateCommande < ActiveRecord::Migration
   		c.float :totalprixarticle
   		c.float :totalprixcommande
   		c.datetime :date
+      c.integrer :produit_id
+      c.text :validation
 
   	end	
   end
