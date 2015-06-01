@@ -107,7 +107,6 @@ hr {
 
 .centrage {
 	text-align: center;
-
 }
 
 .centrage-btn {
@@ -128,6 +127,7 @@ hr {
 }
 
 .quantite {
+	text-align: right;
 	margin: 0px;
 	padding: 0px;
 	font-size: 14px;
