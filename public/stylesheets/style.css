@@ -87,6 +87,10 @@ hr {
 	background-image: linear-gradient(to right, #ccc, #333, #ccc); 
 }
 
+.image-caddie-panier {
+	text-align: center;
+}
+
 .imgproduit-accueil {
 	margin: 1%;
 	width: 60%;
