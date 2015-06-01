@@ -17,6 +17,11 @@
 	margin-right: 2%;
 }
 
+.presentation-produit {
+	border: solid 0.1px;
+	border-color: rgba(18,89,144,0.5);
+}
+
 .promo {
 	text-align: center;
 }
@@ -52,6 +57,7 @@
 }
 
 h1 {
+	font-family:"roboto";
 	font-size: 3.8em;
 	color:rgb(18,89,144);
 	text-align: center;
@@ -73,8 +79,21 @@ td {
 	text-align: center;
 }
 
-.imgproduit {
+hr { 
+	border: 0; 
+	height: 1px; 
+	background: #333; 
+	background-image: linear-gradient(to right, #ccc, #333, #ccc); 
+}
+
+.imgproduit-accueil {
+	margin: 1%;
 	width: 60%;
+}
+
+.imgproduit-fiche-produit {
+	margin: 5%;
+	width: 80%;
 }
 
 .bouton {
@@ -85,5 +104,6 @@ td {
 }
 
 .piece {
+	margin: 2% 2% 2% 2%;
 	font-size: 1.5em;	
 }
