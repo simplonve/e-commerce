@@ -5,6 +5,8 @@
 	display: block;
 	width: 100%;
 	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 .logo img {
@@ -70,4 +72,14 @@ th {
 
 td {
 	text-align: center;
+}
+
+.imgproduit {
+	width: 60%;
+}
+
+.bouton {
+	color: green;
+	font-weight:bold; 
+	padding:10px 10px;
 }

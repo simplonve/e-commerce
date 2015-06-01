@@ -4,10 +4,10 @@
 	</div>
 	<div class="col-md-12">
 		<% @produits.each do |produit| %>
-		<div class="btn promo col-md-3" href="<%= produit.id %>">
+		<div class="btn promo col-md-3">
 			<div class="produit"><%= produit.article %></div>
-			<img src="images/<%= produit.refproduit %>.jpg" class="img-thumbnail" alt="promotion" width="60%" height="60%">
-			<div class="prix"><%= produit.prixproduit.to_s.tr(".",",")%> € <sup>ht</sup></div>
+			<a href="<%= produit.id %>"><img src="images/<%= produit.refproduit %>.jpg" class="imgproduit" alt="promotion"></a>
+			<div class="prix"><%= produit.prixproduit.to_s.tr(".",",")%> € <sup>ttc</sup></div>
 		</div>
 		<% end %>
 	</div>

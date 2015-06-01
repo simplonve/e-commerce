@@ -1,23 +1,20 @@
-<body>
-	<div class="col-xs-4">
-		<input type="image" href="<%= produit.id %>" src="images/<%= produit_select.refproduit%>.jpg" style="margin:25px; height:280px;"/> 
+<%= @produit_select.article %>
+<div class="col-md-4">
+	<input class="imgproduit" type="image" src="images/<%= @produit_select.refproduit %>.jpg"/> 
+</div>
+<div class="col-md-8">
+	<h2><%= @produit_select.article %></h2>
+	<div class="col-md-6">
+		<p><%= @produit_select.descriptif %></p>
 	</div>
-	<div class="col-xs-8">
-		<h2><%= produit_select.article%></h2>
-		<div class="col-md-6">
-			<p><%= produit_select.descriptif%></p>
-		</div>
+</div>
+<th>
+	<div class="btn-group">
+		<input class="bouton" type="button" value="Ajouter au panier"/>
 	</div>
-	<th>
-		<div class="btn-group">
-			<input type="button" value="Ajouter au panier" style="color:green; font-weight:bold; padding:10px 10px;" />
-		</div>
-	</th>
+</th>
 
-	<div class="col-md-4">
-		<div temprop="price" style="color:red; font-weight:bold; font-size:45px ;"content="2,99"><%= produit_select.prixproduit%><sup>€ ht</sup> </div>
-		<div style="color:black; font-weight:bold; font-size:20px;">Piéce</div>
-		<div temprop="price" style="color:black; font-weight:bold; font-size:25px ;"content="3,15"><%= produit_select.prixproduit%><sup>€ ttc</sup>)
-		</div>
-	</div>
-</body>
+<div class="col-md-6"></div>
+	<div class="prix" style="color:red; font-weight:bold; font-size:45px ;"content="2,99"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
+	<div style="color:black; font-weight:bold; font-size:20px;">Piéce</div>
+</div>
