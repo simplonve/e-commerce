@@ -142,3 +142,13 @@ hr {
 	width: 20%;
 	line-height: 26px;
 }
+
+.bouton-validation {
+	position:relative;
+	left:60%;
+}
+
+.texte-validation {
+	font-style: bold;
+	font-size: 2em;
+}
