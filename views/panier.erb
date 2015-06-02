@@ -42,8 +42,6 @@
 						<th>Nom de l'article</th>
 						<th>Description</th>
 						<th>Quantité</th>
-						<th>Prix unitaire HT</th>
-						<th>Prix HT</th>
 						<th>Prix TTC</th>
 						<th>
 							<div class="btn-group" role="group" aria-label="...">
@@ -52,39 +50,39 @@
 						</th>  
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td>1234</td>
-						<td>Gomme</td>
-						<td>Gomme à papier</td>
-						<td>1</td>
-						<td>5,00</td>
-						<td>5,00</td>
-						<td>6,00</td>
-						<td>
-							<div class="btn-group" role="group" aria-label="...">
-								<button type="button" class="btn">
-									<img src="images/poubelle.png" alt="poubelle">
-								</button>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>5678</td>
-						<td>Stylos</td>
-						<td>Lot de stylos de différentes couleurs</td>
-						<td>2</td>
-						<td>10,00</td>
-						<td>20,00</td>
-						<td>24,00</td>
-						<td>
-							<div class="btn-group" role="group" aria-label="...">
-								<button type="button" class="btn">
-									<img src="images/poubelle.png" data-toggle="tooltip"  alt="poubelle">
-								</button>
-							</div>
-						</td>
-					</tr>
+					<% stockage_table_commande = [] 
+						afficher_article = []
+						afficher_descriptif = []
+						afficher_prixproduit = []
+						@commande.each do |v| 
+						 	stockage_table_commande << v.refproduit
+						end 
+						@table_produit.each do |colonne_produit|
+							(0...stockage_table_commande.length).each do |i| 
+								if colonne_produit.refproduit == stockage_table_commande[i]
+						 	  		afficher_article << colonne_produit.article 
+						 	  		afficher_descriptif << colonne_produit.descriptif
+						 	  		afficher_prixproduit << colonne_produit.prixproduit
+								end
+						 	end
+					end %>
+					<tbody>
+						<% (0...afficher_article.length).each do |produit| %>
+						<tr>
+							<td><%= stockage_table_commande[produit] %></td>
+							<td><%= afficher_article[produit] %></td>
+							<td><%= afficher_descriptif[produit] %></td>
+							<td name="QTE">1</td>
+							<td name="PRIX"><%= afficher_prixproduit[produit] %></td>
+							<td>
+								<div class="btn-group" role="group" aria-label="...">
+									<button type="button" class="btn">
+										<img src="images/poubelle.png" alt="poubelle">
+									</button>
+								</div>
+							</td>
+						</tr>
+						<% end %>
 				</tbody>
 			</table>
 		</div>	

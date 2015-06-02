@@ -13,7 +13,7 @@ class Produit < ActiveRecord::Base
 end
  
 class Commande < ActiveRecord::Base
-  belongs_to :produit
+  has_many :produit
 end
 
 get '/' do 
@@ -23,6 +23,7 @@ end
 
 get '/panier' do
 	@commande = Commande.all
+	@table_produit = Produit.all
 	erb :panier
 end
 
