@@ -1,3 +1,7 @@
+.row {
+	margin: 1%;
+}
+
 .navbar-form {
 	margin-top: 25px;
 }
@@ -72,22 +76,20 @@ h2 {
 	font-size: 3em;
 }
 
-th {
-	text-align: center;
-}
-
-td {
+th, td {
 	text-align: center;
 }
 
 hr { 
 	border: 0; 
+	width: 90%;
 	height: 1px; 
 	background: #333; 
 	background-image: linear-gradient(to right, #ccc, #333, #ccc); 
 }
 
 .image-caddie-panier {
+	position: top;
 	text-align: center;
 }
 
@@ -145,10 +147,24 @@ hr {
 
 .bouton-validation {
 	position:relative;
-	left:50%;
+	padding: 1.2em;
+	left:60%;
 }
 
 .texte-validation {
 	font-style: bold;
 	font-size: 2em;
 }
+
+.table-panier {
+	position: relative;
+	padding:1%;
+	margin: 1%;
+	width: 96%;
+	background-color: #fff;
+}
+
+.table-panier th,
+.table-panier td {
+    border: 1px solid #ddd !important;
+  }
