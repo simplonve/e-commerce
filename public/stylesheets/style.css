@@ -11,7 +11,7 @@
 }
 
 .form-control {
-	border: solid 1.5px;
+	border: solid 1px;
 	border-color: rgb(18,89,144);
 }
 
@@ -88,6 +88,11 @@ h2 {
 	font-size: 3em;
 }
 
+h4 {
+	font-size: 1em;
+	text-align: center;
+}
+
 tr, th, td {
 	text-align: center;
 }
@@ -101,7 +106,7 @@ hr {
 }
 
 .image-titre {
-	margin: 0% 2% 2% 0%;
+	margin: 2% 2% 2% 0%;
 }
 
 .image-caddie-panier {
