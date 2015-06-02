@@ -1,121 +1,116 @@
-<html lang="fr">
-</head>
-<body>
-	<div class="row">
-		<div class="col-md-8">
-			<div class="form-inline form-group">
-				<label for="numero-client">Numéro Client :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">007</intput>
-				<label class="client" for="nom">Prénom :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">Bernard</intput>
-				<label class="client" for="nom">Nom :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">Dupont</intput>
-			</div>				
-			<div class="form-inline form-group">
-				<label for="adresse-client">Adresse :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">55 Rue du Faubourg Saint-Honoré, 75008 Paris</intput>
-				<label class="client" for="pays-client">Pays :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">FRANCE</intput>
-			</div>
-			<div class="form-inline form-group">
-				<label for="telephone-client">Téléphone :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">00 00 00 00 00</intput>
-				<label class="client" for="numero-client">Mail :</label>
-				<intput type="text" class="form-control" id="exampleInputName2">b.dupont@simplonve.co</intput>
-			</div>
-		</form>
-	</div>
-	<div class="col-md-2 text-right form-inline">
-		<label for="numero-facture">N° Facture :
-			<intput type="text" class="form-control" id="exampleInputName2">0000174</intput>
+<div class="row">
+	<div class="col-md-8">
+		<div class="form-inline form-group">
+			<label for="numero-client">Numéro Client :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">007</intput>
+			<label class="client" for="nom">Prénom :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">Bernard</intput>
+			<label class="client" for="nom">Nom :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">Dupont</intput>
+		</div>				
+		<div class="form-inline form-group">
+			<label for="adresse-client">Adresse :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">55 Rue du Faubourg Saint-Honoré, 75008 Paris</intput>
+			<label class="client" for="pays-client">Pays :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">FRANCE</intput>
+		</div>
+		<div class="form-inline form-group">
+			<label for="telephone-client">Téléphone :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">00 00 00 00 00</intput>
+			<label class="client" for="numero-client">Mail :</label>
+			<intput type="text" class="form-control" id="exampleInputName2">b.dupont@simplonve.co</intput>
+		</div>
+	</form>
+</div>
+<div class="col-md-2 text-right form-inline">
+	<label for="numero-facture">N° Facture :
+		<intput type="text" class="form-control" id="exampleInputName2">0000174</intput>
+	</label>
+	<label for="date-facture">Date :
+		<intput type="text" class="form-control" id="exampleInputName2">04/06/2015</input>
 		</label>
-		<label for="date-facture">Date :
-			<intput type="text" class="form-control" id="exampleInputName2">04/06/2015</input>
-			</label>
+	</div>
+	<div class="col-md-2 image-caddie-panier">
+		<img src="images/caddie-orange.png" alt="panier-orange">
+	</div>
+	<div class="col-md-12">
+		<div class="table-responsive">
+			<table id="example" class="table-panier">
+				<thead>
+					<tr>
+						<th>Référence produit</th>
+						<th>Nom de l'article</th>
+						<th>Description</th>
+						<th>Quantité</th>
+						<th>Prix unitaire HT</th>
+						<th>Prix HT</th>
+						<th>Prix TTC</th>
+						<th>
+							<div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn"><img src="images/ajouter.png" alt="ajouter">
+							</div>
+						</th>  
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1234</td>
+						<td>Gomme</td>
+						<td>Gomme à papier</td>
+						<td>1</td>
+						<td>5,00</td>
+						<td>5,00</td>
+						<td>6,00</td>
+						<td>
+							<div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn">
+									<img src="images/poubelle.png" alt="poubelle">
+								</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>5678</td>
+						<td>Stylos</td>
+						<td>Lot de stylos de différentes couleurs</td>
+						<td>2</td>
+						<td>10,00</td>
+						<td>20,00</td>
+						<td>24,00</td>
+						<td>
+							<div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn">
+									<img src="images/poubelle.png" data-toggle="tooltip"  alt="poubelle">
+								</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>	
+	</div>
+	<div class="col-md-12">
+		<div class="col-md-8 bouton-validation">
+			<button type="button" class="btn btn-default">
+				<img src="images/bouton-valider-commande.png" alt="Valider la commande">
+			</button>
 		</div>
-		<div class="col-md-2 image-caddie-panier">
-			<img src="images/caddie-orange.png" alt="panier-orange">
-		</div>
-		<div class="col-md-12">
-			<div class="table-responsive">
-				<table id="example" class="table-panier">
-					<thead>
-						<tr>
-							<th>Référence produit</th>
-							<th>Nom de l'article</th>
-							<th>Description</th>
-							<th>Quantité</th>
-							<th>Prix unitaire HT</th>
-							<th>Prix HT</th>
-							<th>Prix TTC</th>
-							<th>
-								<div class="btn-group" role="group" aria-label="...">
-									<button type="button" class="btn btn-default"><img src="images/ajouter.png" alt="ajouter">
-								</div>
-							</th>  
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1234</td>
-							<td>Gomme</td>
-							<td>Gomme à papier</td>
-							<td>1</td>
-							<td>5,00</td>
-							<td>5,00</td>
-							<td>6,00</td>
-							<td>
-								<div class="btn-group" role="group" aria-label="...">
-									<button type="button" class="btn btn-default">
-										<img src="images/poubelle.png" alt="poubelle">
-									</button>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>5678</td>
-							<td>Stylos</td>
-							<td>Lot de stylos de différentes couleurs</td>
-							<td>2</td>
-							<td>10,00</td>
-							<td>20,00</td>
-							<td>24,00</td>
-							<td>
-								<div class="btn-group" role="group" aria-label="...">
-									<button type="button" class="btn btn-default">
-										<img src="images/poubelle.png" data-toggle="tooltip"  alt="poubelle">
-									</button>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>	
-		</div>
-		<div class="col-md-12">
-			<div class="col-md-8 bouton-validation">
-				<button type="button" class="btn btn-default">
-					<img src="images/bouton-valider-commande.png" alt="Valider la commande">
-				</button>
+		<div class="col-md-4 form-inline text-right">
+			<div class="prix_total">
+				<label for="Total_HT">Total (ht) :</label>
+				<intput class="form-control" type="text" id="exampleInputName2">25,00</intput>
+				<label> € </label>
 			</div>
-			<div class="col-md-4 form-inline text-right">
-				<div class="prix_total">
-					<label for="Total_HT">Total (ht) :</label>
-					<intput class="form-control" type="text" id="exampleInputName2">25,00</intput>
-					<label> € </label>
-				</div>
-				<div class="prix_tva">
-					<label for="TVA">TVA 20 % :</label>
-					<intput class="form-control" type="text" id="exampleInputName2">5,00</intput>
-					<label> € </label>
-				</div>
-				<div class="prix_total">
-					<label for="Total_TTC">Total (ttc) :</label>
-					<intput type="text" class="form-control prix_total" id="exampleInputName2">30,00</intput>
-					<label> € </label>
-				</div>
+			<div class="prix_tva">
+				<label for="TVA">TVA 20 % :</label>
+				<intput class="form-control" type="text" id="exampleInputName2">5,00</intput>
+				<label> € </label>
+			</div>
+			<div class="prix_total">
+				<label for="Total_TTC">Total (ttc) :</label>
+				<intput type="text" class="form-control prix_total" id="exampleInputName2">30,00</intput>
+				<label> € </label>
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+</div>
