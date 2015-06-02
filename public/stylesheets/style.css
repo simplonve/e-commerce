@@ -58,7 +58,7 @@
 	font-size:30px ;
 }
 
-.prix_total {
+.prix_total,.prix_tva {
 	display : block;
 	margin: 2% 0% 0% 2%;
 	color:black;
@@ -66,13 +66,6 @@
 	font-size:20px ;
 }
 
-.prix_tva {
-	display: block;
-	margin: 2% 0% 0% 2%;
-	color:black;
-	font-style: italic; 
-	font-size:20px ;
-}
 
 h1 {
 	font-size: 3.8em;
