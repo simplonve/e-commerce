@@ -10,6 +10,11 @@
 	margin-bottom: 2%;
 }
 
+.form-control {
+	border: solid 1.5px;
+	border-color: rgb(18,89,144);
+}
+
 .logo img {
 	display: inline;
 }
@@ -83,7 +88,7 @@ h2 {
 	font-size: 3em;
 }
 
-th, td {
+tr, th, td {
 	text-align: center;
 }
 
@@ -174,10 +179,9 @@ hr {
 
 .table-panier {
 	position: relative;
-	padding:1%;
-	margin: 1%;
-	width: 96%;
+	width: 100%;
 	background-color: #fff;
+	border-color: rgb(18,89,144);
 }
 
 .table-panier th,
