@@ -2,9 +2,6 @@
 	margin: 1%;
 }
 
-.navbar-form {
-	margin-top: 25px;
-}
 .logo, .reseau-sociaux {
 	display: block;
 	width: 100%;
@@ -17,8 +14,18 @@
 	display: inline;
 }
 
-.navbar-right {
-	margin-right: 2%;
+.nav {
+	background-color: white;
+}
+
+.navbar {
+ background-color: rgba(18,89,144,5);
+ margin-left: 2%;
+ margin-right: 2%;
+}
+
+.navbar-form {
+	margin-top: 25px;
 }
 
 .presentation-produit {
@@ -88,6 +95,10 @@ hr {
 	background-image: linear-gradient(to right, #ccc, #333, #ccc); 
 }
 
+.image-titre {
+	margin: 0% 2% 2% 2%;
+}
+
 .image-caddie-panier {
 	position: top;
 	text-align: center;
@@ -101,6 +112,12 @@ hr {
 .imgproduit-fiche-produit {
 	margin: 5%;
 	width: 80%;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: rgb(18,89,144);
 }
 
 .bouton {
