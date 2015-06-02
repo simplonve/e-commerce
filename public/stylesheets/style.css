@@ -60,7 +60,7 @@
 
 .prix_total {
 	display : block;
-	margin-left: 2%;
+	margin: 2% 0% 0% 2%;
 	color:black;
 	font-weight:bold; 
 	font-size:20px ;
@@ -68,7 +68,7 @@
 
 .prix_tva {
 	display: block;
-	margin-left: 2%;
+	margin: 2% 0% 0% 2%;
 	color:black;
 	font-style: italic; 
 	font-size:20px ;
@@ -91,10 +91,7 @@ h2 {
 h4 {
 	font-size: 1em;
 	text-align: center;
-}
-
-tr, th, td {
-	text-align: center;
+	color: rgb(18,89,144);
 }
 
 hr { 
@@ -140,10 +137,6 @@ hr {
 	font-size: 1.5em;	
 }
 
-.centrage {
-	text-align: center;
-}
-
 .centrage-btn {
 	margin-top: 2%;
 	display: inline-block;
@@ -168,12 +161,13 @@ hr {
 	font-size: 14px;
 	color: #777;
 	text-transform: uppercase;
-	width: 20%;
-	line-height: 26px;
+	width: 30%;
+	line-height: 25px;
 }
 
 .bouton-validation {
 	position:relative;
+	margin-top: 2%;
 	padding: 1.2em;
 }
 
@@ -189,7 +183,9 @@ hr {
 	border-color: rgb(18,89,144);
 }
 
+.table-panier tr,
 .table-panier th,
 .table-panier td {
-    border: 1px solid #ddd !important;
+	text-align: center;
+    border: 1.5px solid rgb(18,89,144);
   }
