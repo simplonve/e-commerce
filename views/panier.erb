@@ -42,7 +42,7 @@
 						<th class="center">Nom de l'article</th>
 						<th class="center">Description</th>
 						<th class="center">Quantité</th>
-						<th class="center">Prix TTC</th>
+						<th class="center">Prix HT</th>
 						<th class="center">
 							<div class="btn-group" role="group" aria-label="...">
 								<a href="/" type="button" class="btn"><img src="images/ajouter.png" alt="ajouter"></a>
@@ -104,17 +104,32 @@
 		<div class="col-md-4 form-inline text-right">
 			<div class="prix_total">
 				<label for="Total_HT">Total (ht) :</label>
-				<intput class="form-control" type="text" id="exampleInputName2">25,00</intput>
+				<intput class="form-control" type="text" id="exampleInputName2">
+					<% affichage_ttc = 0
+					(0...afficher_article.length).each do |prix|
+						affichage_ttc += afficher_prixproduit[prix] * stockage_quantite_article[prix]
+					end
+					%>
+					<%= affichage_ttc %>
+				</intput>
 				<label> € </label>
 			</div>
 			<div class="prix_tva">
 				<label for="TVA">TVA 20 % :</label>
-				<intput class="form-control" type="text" id="exampleInputName2">5,00</intput>
+				<intput class="form-control" type="text" id="exampleInputName2">
+				<% tva = (affichage_ttc * 20 / 100).to_s
+				affichage_tva = ""
+				tva.length > 3 ? affichage_tva = tva[0..3] : affichage_tva = tva %>
+				<%= affichage_tva %>
+				</intput>
+
 				<label> € </label>
 			</div>
 			<div class="prix_total">
 				<label for="Total_TTC">Total (ttc) :</label>
-				<intput type="text" class="form-control prix_total" id="exampleInputName2">30,00</intput>
+				<intput type="text" class="form-control prix_total" id="exampleInputName2">
+				<%= affichage_ttc.to_f + affichage_tva.to_f %>
+				</intput>
 				<label> € </label>
 			</div>
 		</div>

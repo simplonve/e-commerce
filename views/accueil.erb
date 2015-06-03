@@ -7,7 +7,7 @@
 		<div class="presentation-produit btn promo col-md-3">
 			<div class="produit"><%= produit.article %></div>
 			<a href="<%= produit.id %>"><img src="images/<%= produit.refproduit %>.jpg" class="imgproduit-accueil" alt="promotion"></a>
-			<div class="prix"><%= produit.prixproduit.to_s.tr(".",",")%> € <sup>ttc</sup></div>
+			<div class="prix"><%= produit.prixproduit.to_s.tr(".",",")%> € <sup>ht</sup></div>
 		</div>
 		<% end %>
 	</div>
