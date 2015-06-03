@@ -11,25 +11,36 @@
 			<p><%= @produit_select.descriptif %></p>
 			<hr>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-8 info-prix">
 			<div class="col-md-3">
 				<div>Réf. : <%= @produit_select.refproduit %></div>
-				<div class="prix" content="2,99"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
+				<div class="prix"><%= @produit_select.prixproduit %><sup>€ ttc</sup> </div>
 				<div class="piece">Piéce</div>
 			</div>
-			<div class="col-md-5 centrage-quantite">
+			<div class="col-md-3">
+				<th>
+					<div class="stock">
+						<div class="nombre-en-stock">
+							<%= @produit_select.stock %>
+						</div>
+						<div class="image-stock">
+							<img src="images/stock.png"/>
+						</div>
+					</div>
+				</th>	
+			</div>
+			<div class="col-md-3 centrage-quantite">
 				<th>
 					<label for="quantite">
 						Quantité :
 					</label>
 					<input class="quantite" id="quantite" type="number" name="nombre"></input>
-				</div>
-				<div class="col-md-4 centrage-btn ">
+			</div>
+			<div class="col-md-3 centrage-btn ">
 					<form method="post" action="/ajout">
 						<input type="text" class="hidden" name="test[refproduit]" placeholder="" value="<%= @produit_select.refproduit %>" >
 						<button class="bouton" type="submit"><img src="images/caddie-vert.png" class="pull-center"/>Ajouter au panier</button>
 					</form>
-				</div>
 				</th>
 			</div>
 		</div>

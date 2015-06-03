@@ -42,5 +42,11 @@ end
 post '/ajout' do
 	@ajout_produit_panier = Commande.new(params[:test])
 	@ajout_produit_panier.save
-	redirect "/"
+	redirect "/panier"
+end
+
+delete "/:id" do
+	@suppression_article = Commande.find(params[:id])
+	@suppression_article.destroy
+	redirect "/panier"
 end

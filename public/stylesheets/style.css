@@ -99,7 +99,7 @@ hr {
 }
 
 .image-titre {
-	margin: 2% 2% 2% 0%;
+	margin: 2% 2% 0% 5%;
 }
 
 .image-caddie-panier {
@@ -130,6 +130,48 @@ hr {
 	border-radius: 4px;
 	border: 1px solid;
 	border-color: green;
+}
+
+
+.info-prix {
+	display: inline-block;
+	margin-top : 2%;
+}
+
+.stock {
+	display: inline-block;
+	margin: 2% 10% 2% 10%;
+	padding: 5%;
+	color: green;
+}
+
+.nombre-en-stock {
+	display: inline-block;
+	font-weight:bold; 
+	font-size: 1.5em;
+}
+
+.image-stock {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	    touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	background-color: white;;
 }
 
 .piece {
@@ -169,7 +211,7 @@ hr {
 
 .bouton-validation {
 	position:relative;
-	margin-top: 2%;
+	/*margin-top: 2%;*/
 	padding: 1.2em;
 }
 
@@ -183,6 +225,12 @@ hr {
 	width: 100%;
 	background-color: #fff;
 	border-color: rgb(18,89,144);
+}
+
+
+.descriptif {
+	text-align: justify;
+	border: 1.5px solid rgb(18,89,144);
 }
 
 .table-panier tr,

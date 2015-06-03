@@ -50,16 +50,18 @@
 						</th>  
 					</tr>
 				</thead>
-					<% stockage_table_commande = [] 
+					 <% stockage_table_commande = [] 
+					 	stockage_table_id = []
 						afficher_article = []
 						afficher_descriptif = []
 						afficher_prixproduit = []
-						@commande.each do |v| 
-						 	stockage_table_commande << v.refproduit
+						@commande.each do |produit| 
+						 	stockage_table_commande << produit.refproduit
+						 	stockage_table_id << produit.id
 						end 
 						@table_produit.each do |colonne_produit|
-							(0...stockage_table_commande.length).each do |i| 
-								if colonne_produit.refproduit == stockage_table_commande[i]
+							(0...stockage_table_commande.length).each do |produit| 
+								if colonne_produit.refproduit == stockage_table_commande[produit]
 						 	  		afficher_article << colonne_produit.article 
 						 	  		afficher_descriptif << colonne_produit.descriptif
 						 	  		afficher_prixproduit << colonne_produit.prixproduit
@@ -76,9 +78,13 @@
 							<td name="PRIX"><%= afficher_prixproduit[produit] %></td>
 							<td>
 								<div class="btn-group" role="group" aria-label="...">
-									<button type="button" class="btn">
-										<img src="images/poubelle.png" alt="poubelle">
-									</button>
+									<form action="/<%= stockage_table_id[produit] %>" method="post">
+										<input type="hidden" name="_method" value="delete">
+										<button type="submit" class="btn" value="Delete">
+											<img src="images/poubelle.png" alt="poubelle">
+										</button>
+									</form>
+
 								</div>
 							</td>
 						</tr>
