@@ -77,7 +77,7 @@
 							<td class="center"><%= afficher_article[produit] %></td>
 							<td class="justify"><%= afficher_descriptif_panier[produit] %></td>
 							<td class="center"><%= stockage_quantite_article[produit] %></td>
-							<td class="center"><%= afficher_prixproduit[produit] %></td>
+							<td class="center"><%= afficher_prixproduit[produit].to_s.tr(".",",") %></td>
 							<td class="center">
 								<div class="btn-group" role="group" aria-label="...">
 									<form action="/<%= stockage_table_id[produit] %>" method="post">
@@ -110,7 +110,7 @@
 						affichage_ttc += afficher_prixproduit[prix] * stockage_quantite_article[prix]
 					end
 					%>
-					<%= affichage_ttc %>
+					<%= sprintf("%.2f", affichage_ttc).to_s.tr(".",",") %>
 				</intput>
 				<label> € </label>
 			</div>
@@ -120,7 +120,7 @@
 				<% tva = (affichage_ttc * 20 / 100).to_s
 				affichage_tva = ""
 				tva.length > 3 ? affichage_tva = tva[0..3] : affichage_tva = tva %>
-				<%= affichage_tva %>
+				<%= sprintf("%.2f", affichage_tva).to_s.tr(".",",") %>
 				</intput>
 
 				<label> € </label>
@@ -128,7 +128,8 @@
 			<div class="prix_total">
 				<label for="Total_TTC">Total (ttc) :</label>
 				<intput type="text" class="form-control prix_total" id="exampleInputName2">
-				<%= affichage_ttc.to_f + affichage_tva.to_f %>
+				<% affichage_final = affichage_ttc.to_f + affichage_tva.to_f%>
+				<%= sprintf("%.2f", affichage_final).to_s.tr(".",",") %>
 				</intput>
 				<label> € </label>
 			</div>
