@@ -13,8 +13,15 @@ class Produit < ActiveRecord::Base
 end
  
 class Commande < ActiveRecord::Base
-  has_many :produit
+  has_many :produits
 end
+
+class Client < ActiveRecord::Base
+  has_many :clients
+  has_many :commandes
+  has_many :produits 
+end
+
 
 get '/' do 
 	@produits = Produit.all
