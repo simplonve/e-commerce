@@ -53,7 +53,7 @@
 					 <% stockage_table_commande = [] 
 					 	stockage_table_id = []
 						afficher_article = []
-						afficher_descriptif = []
+						afficher_descriptif_panier = []
 						afficher_prixproduit = []
 						@commande.each do |produit| 
 						 	stockage_table_commande << produit.refproduit
@@ -63,7 +63,7 @@
 							(0...stockage_table_commande.length).each do |produit| 
 								if colonne_produit.refproduit == stockage_table_commande[produit]
 						 	  		afficher_article << colonne_produit.article 
-						 	  		afficher_descriptif << colonne_produit.descriptif
+						 	  		afficher_descriptif_panier << colonne_produit.descriptif_panier
 						 	  		afficher_prixproduit << colonne_produit.prixproduit
 								end
 						 	end
@@ -73,7 +73,7 @@
 						<tr>
 							<td class="center"><%= stockage_table_commande[produit] %></td>
 							<td class="center"><%= afficher_article[produit] %></td>
-							<td class="justify"><%= afficher_descriptif[produit] %></td>
+							<td class="justify"><%= afficher_descriptif_panier[produit] %></td>
 							<td class="center" name="QTE">1</td>
 							<td class="center" name="PRIX"><%= afficher_prixproduit[produit] %></td>
 							<td class="center">
