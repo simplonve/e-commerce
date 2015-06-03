@@ -38,12 +38,12 @@
 			<table id="example" class="table-panier">
 				<thead>
 					<tr>
-						<th>Référence produit</th>
-						<th>Nom de l'article</th>
-						<th>Description</th>
-						<th>Quantité</th>
-						<th>Prix TTC</th>
-						<th>
+						<th class="center">Référence produit</th>
+						<th class="center">Nom de l'article</th>
+						<th class="center">Description</th>
+						<th class="center">Quantité</th>
+						<th class="center">Prix TTC</th>
+						<th class="center">
 							<div class="btn-group" role="group" aria-label="...">
 								<a href="/" type="button" class="btn"><img src="images/ajouter.png" alt="ajouter"></a>
 							</div>
@@ -71,12 +71,12 @@
 					<tbody>
 						<% (0...afficher_article.length).each do |produit| %>
 						<tr>
-							<td><%= stockage_table_commande[produit] %></td>
-							<td><%= afficher_article[produit] %></td>
-							<td><%= afficher_descriptif[produit] %></td>
-							<td name="QTE">1</td>
-							<td name="PRIX"><%= afficher_prixproduit[produit] %></td>
-							<td>
+							<td class="center"><%= stockage_table_commande[produit] %></td>
+							<td class="center"><%= afficher_article[produit] %></td>
+							<td class="justify"><%= afficher_descriptif[produit] %></td>
+							<td class="center" name="QTE">1</td>
+							<td class="center" name="PRIX"><%= afficher_prixproduit[produit] %></td>
+							<td class="center">
 								<div class="btn-group" role="group" aria-label="...">
 									<form action="/<%= stockage_table_id[produit] %>" method="post">
 										<input type="hidden" name="_method" value="delete">

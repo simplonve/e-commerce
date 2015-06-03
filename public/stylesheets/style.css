@@ -226,17 +226,17 @@ hr {
 	background-color: #fff;
 	border-color: rgb(18,89,144);
 }
-
-
-.descriptif {
-	text-align: justify;
-	border: 1.5px solid rgb(18,89,144);
+.center {
+		text-align: center;
 }
 
+.justify {
+	text-align: justify;
+	padding-left: 2%;
+}
 .table-panier tr,
 .table-panier th,
 .table-panier td {
-	text-align: center;
     border: 1.5px solid rgb(18,89,144);
  }
 
