@@ -29,16 +29,12 @@
 					</div>
 				</th>	
 			</div>
-			<div class="col-md-3 centrage-quantite">
-				<th>
-					<label for="quantite">
-						Quantité :
-					</label>
-					<input class="quantite" id="quantite" type="number" name="nombre"></input>
-			</div>
-			<div class="col-md-4 centrage-btn ">
+			<div class="col-md-7 centrage-quantite">
+				<th>		
 					<form method="post" action="/ajout">
-						<input type="text" class="hidden" name="test[refproduit]" placeholder="" value="<%= @produit_select.refproduit %>" >
+						<label for="quantite">Quantité :</label>
+						<input type="text" class="hidden" name="valeur[refproduit]" placeholder="" value="<%= @produit_select.refproduit %>" >
+						<input class="quantite" id="quantite" type="number" name="valeur[quantitearticle]" placeholder="" value="1">
 						<button class="bouton" type="submit"><img src="images/caddie-vert.png" class="pull-center"/>Ajouter au panier</button>
 					</form>
 				</th>

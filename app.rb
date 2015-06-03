@@ -40,7 +40,7 @@ get '/:id' do
 end
 
 post '/ajout' do
-	@ajout_produit_panier = Commande.new(params[:test])
+	@ajout_produit_panier = Commande.new(params[:valeur])
 	@ajout_produit_panier.save
 	redirect "/panier"
 end

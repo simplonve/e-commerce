@@ -51,6 +51,7 @@
 					</tr>
 				</thead>
 					 <% stockage_table_commande = [] 
+					 	stockage_quantite_article = []
 					 	stockage_table_id = []
 						afficher_article = []
 						afficher_descriptif_panier = []
@@ -58,6 +59,7 @@
 						@commande.each do |produit| 
 						 	stockage_table_commande << produit.refproduit
 						 	stockage_table_id << produit.id
+						 	stockage_quantite_article << produit.quantitearticle
 						end 
 						@table_produit.each do |colonne_produit|
 							(0...stockage_table_commande.length).each do |produit| 
@@ -74,8 +76,8 @@
 							<td class="center"><%= stockage_table_commande[produit] %></td>
 							<td class="center"><%= afficher_article[produit] %></td>
 							<td class="justify"><%= afficher_descriptif_panier[produit] %></td>
-							<td class="center" name="QTE">1</td>
-							<td class="center" name="PRIX"><%= afficher_prixproduit[produit] %></td>
+							<td class="center"><%= stockage_quantite_article[produit] %></td>
+							<td class="center"><%= afficher_prixproduit[produit] %></td>
 							<td class="center">
 								<div class="btn-group" role="group" aria-label="...">
 									<form action="/<%= stockage_table_id[produit] %>" method="post">
