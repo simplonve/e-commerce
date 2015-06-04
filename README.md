@@ -50,3 +50,6 @@ concaténation et différents calculs à rendre aux Front
 
 Le 03/06/2015
 Travail de finalisation de certains bugs en équipe complète à 5 et explication des derniers changement et diverses façons utilisées pour récuperer les valeurs de la base de données.
+
+Le 04/06/2015
+Finalisation et remplissage readme
